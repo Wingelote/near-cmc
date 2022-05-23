@@ -28,7 +28,7 @@ impl Contract {
         self.exchange_rate.push(rate);
     }
 
-    pub fn get_colection(&self) -> [f64; MAX_SIZE] {
+    pub fn get_collection(&self) -> [f64; MAX_SIZE] {
         return self.exchange_rate.collection;
     }
 }
@@ -77,7 +77,7 @@ mod tests {
         collection[0] = 1.0;
 
         // confirm that we received 1.0 at index 0
-        assert_eq!(collection, contract.get_colection());
+        assert_eq!(collection, contract.get_collection());
     }
 
     #[test]
